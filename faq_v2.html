@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="arial" content="width=device-width, initial-scale=1.0">
+<title>FAQs</title>
+<style>
+  .faq-question {
+    font-size: 24px;
+    font-weight: bold;
+    color:white;
+    background: #054D94;
+    cursor: pointer;
+    padding: 10px;
+ 
+    border: 1px solid #054D94;
+    margin-bottom: 10px;
+  }
+  .faq-answer {
+    font-size: 18px;
+    display: none;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+  }
+</style>
+</head>
+<body>
+
+<h1>Frequently Asked Questions (FAQs)</h1>
+
+<div class="faq-question" onclick="toggleAnswer('faq1')" id="question_faq1">What are the admission fees?</div>
+<div id="faq1" class="faq-answer">The admission fee is BDT. 8000, regardless of the course.</div>
+
+
+<div class="faq-question" onclick="toggleAnswer('faq2')" id="question_faq2">What are the tuition/course fees?</div>
+<div id="faq2" class="faq-answer">The course fee varies depending on the course. <br><br>
+  Here’s a breakdown: <br>
+    B.Sc in CSE – BDT. 3,56,000/- <br>
+    B.Sc in EEE – BDT. 3,20,000/- <br>
+    B.Sc in Food Engineering – BDT. 3,30,000/- <br>
+    B.BA (Business Administration) – BDT. 2,63,000/- <br>
+    M.BA (Business Administration) – BDT. 1,31,000/- <br>
+    B.A in English – BDT. 2,07,000/-</div>
+
+<div class="faq-question" onclick="toggleAnswer('faq3')" id="question_faq3">Are there any waivers or financial aids?</div>
+<div id="faq3" class="faq-answer">Yes! Depending on your HSC or Diploma Engineering results, or by belonging to a special category, you may be granted a waiver.</div>
+
+<div class="faq-question" onclick="toggleAnswer('faq4')" id="question_faq4">How many semesters are there in total?</div>
+<div id="faq4" class="faq-answer">Regular (HSC) graduates will need to complete 8 semesters in total.<br>CSE graduates with a Diploma will need to complete 7 semesters.</div>
+
+<div class="faq-question" onclick="toggleAnswer('faq5')" id="question_faq5">How many semesters are there per year?</div>
+<div id="faq5" class="faq-answer">There are two semesters per academic year.</div>
+
+<div class="faq-question" onclick="toggleAnswer('faq6')" id="question_faq6">What is the eligibility for admission?</div>
+<div id="faq6" class="faq-answer">Prospective students with a minimum GPA of 2.5 in both SSC/Dakhil/Vocational and HSC/Alim/Vocational from the Science group, along with at least a 'C' grade in Physics and Mathematics, are eligible to apply for admission.<br><br>
+  Children of War Freedom Fighters are required to achieve a minimum cumulative GPA of 5.00 across both examinations. <br><br>
+  Candidates who obtain a GPA of 2.00 in any examination of SSC and HSC must have a CGPA of 6.00 in total for both examinations.<br><br>
+  Individuals with a Diploma in Engineering and a GPA of 2.5 on a scale of 4.0 or a minimum second division are eligible for admission. </div>
+
+<div class="faq-question" onclick="toggleAnswer('faq7')" id="question_faq7">Are there any additional fees/hidden charges?</div>
+<div id="faq7" class="faq-answer">These following additional fees may be incurred:<br><br>
+  Semester Registration Fee - BDT. 3,000<br>
+  Tuition Fee (Per Credit) -  BDT. 1800<br>
+  Library Fee (Per Semester) – BDT. 1,500<br>
+  Co-Curricular Fee (Per Semester) – BDT. 1,500</div>
+
+<div class="faq-question" onclick="toggleAnswer('faq8')" id="question_faq8">What documents do I need for admission?</div>
+<div id="faq8" class="faq-answer">You’ll need the following documents:<br><br>
+  (a) A photocopy of your National ID card (NID) or Birth Certificate.<br>
+  (b) Photocopies of your HSC/SSC/equivalent examination marksheet.<br>
+  (c) Four copies of passport size photographs.</div>
+
+<div class="faq-question" onclick="toggleAnswer('faq9')"id="question_faq9">Are there online classes?</div>
+<div id="faq9" class="faq-answer">Currently, we do not host online classes.<br>However, class materials will usually be supplied online for those who can’t attend physically.</div>
+
+<div class="faq-question" onclick="toggleAnswer('faq10')"id="question_faq10">Is attendance mandatory?</div>
+<div id="faq10" class="faq-answer">Yes, there are marks on attendance.<br>In addition, it is vital that you attend classes regularly to properly understand the course.</div>
+
+<div class="faq-question" onclick="toggleAnswer('faq11')" id="question_faq11">Do I need a personal computer (desktop or laptop)?</div>
+<div id="faq11" class="faq-answer">Yes, it is recommended that you own a personal computer, whether it be a desktop or a laptop.<br>While we do offer a computer laboratory, in order to make the most of the course, having continuous access to a computer is highly recommended.</div>
+
+<div class="faq-question" onclick="toggleAnswer('faq12')" id="question_faq12">What facilities does the university provide?</div>
+<div id="faq12" class="faq-answer">In addition to our well-maintained classrooms, we offer a library, a laboratory for physics and chemistry-related work, a computer laboratory and much more!</div>
+
+<div class="faq-question" onclick="toggleAnswer('faq13')"id="question_faq13">Are there any co-curricular activities?</div>
+<div id="faq13" class="faq-answer">es, in addition to scheduled classes, we offer activities such as excursion, educational tourism and the ability work and contribute towards the development of your department; which will no doubt provide you with valuable real-world experience!</div>
+
+<div class="faq-question" onclick="toggleAnswer('faq14')"id="question_faq14">Where is the campus located?</div>
+<div id="faq14" class="faq-answer">Our current campus is located at 495, East Basta, Singair, Manikganj, Dhaka.</div>
+
+<div class="faq-question" onclick="toggleAnswer('faq15')"id="question_faq15">When is the university open?</div>
+<div id="faq15" class="faq-answer">The university is open from Wednesday to Sunday; from 8 AM to 4 PM.<br>We are closed on Monday and Tuesday.</div>
+
+<div class="faq-question" onclick="toggleAnswer('faq16')"id="question_faq16">Who founded the university and when?</div>
+<div id="faq16" class="faq-answer">The university was founded by Ishaque Ali Khan Panna in 2016.</div>
+
+<div class="faq-question" onclick="toggleAnswer('faq17')"id="question_faq17">Is the university recognized by the University Grants Commission of Bangladesh?</div>
+<div id="faq17" class="faq-answer">Yes, it is indeed recognized by University Grants Commission of Bangladesh. It's currently ranked at 85.</div>
+
+<div class="faq-question" onclick="toggleAnswer('faq18')"id="question_faq18">How many faculties are there?</div>
+<div id="faq18" class="faq-answer">There are currently three faculties.</div>
+
+<div class="faq-question" onclick="toggleAnswer('faq19')"id="question_faq19">How many students have studied here?</div>
+<div id="faq19" class="faq-answer">So far, we have educated over 3000 students.</div>
+
+<div class="faq-question" onclick="toggleAnswer('faq20')"id="question_faq20">Do I need to understand English?</div>
+<div id="faq20" class="faq-answer">While the instructors will hold classes in Bengali for the most part, 
+  the examinations will be held in English and you’d be required to 
+  submit your papers in said language.<br>Therefore, it is recommended 
+  that you possess a good grasp of the English knowledge, regardless 
+  of which course you choose to enroll into.</div>
+
+<div class="faq-question" onclick="toggleAnswer('faq21')"id="question_faq21">What are the job prospects?</div>
+<div id="faq21" class="faq-answer">About 70 to 80 percent students get a job following graduation.</div>
+
+
+<div class="faq-question" onclick="toggleAnswer('faq22')"id="question_faq22">Does the university provide research opportunities?</div>
+<div id="faq22" class="faq-answer">Yes! We are proud to announce that we have conducted researches in
+  the fields of Blockchain Technology, Search Engine Optimization 
+  (SEO) and Public Health.<br>With enough expertise, you might one day 
+  be able to contribute as well!</div>
+<script>
+function toggleAnswer(id) {
+  var answer = document.getElementById(id);
+  var question = document.getElementById('question_' + id);
+  if (answer.style.display === "none") {
+    answer.style.display = "block";
+    question.innerHTML = "▼ " + question.innerHTML;
+    question.style.background='green'; // Add a down arrow symbol
+  } else {
+    answer.style.display = "none";
+    question.innerHTML = question.innerHTML.replace("▼ ", "");
+    question.style.background ='gray';
+    // Remove the down arrow symbol
+  }
+}
+</script>
+
+</body>
+</html>
